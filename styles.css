@@ -99,3 +99,59 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
   text-shadow:0 3px 14px rgba(0,0,0,.32);
 }
 
+
+
+/* Phase 3 — hosted contact form */
+.hp-field{
+  position:absolute!important;
+  left:-9999px!important;
+  width:1px!important;
+  height:1px!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+.form-note{
+  color:var(--muted);
+  font-size:12px;
+}
+.thank-you-card{
+  max-width:720px;
+  margin:0 auto;
+  text-align:center;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r-xl);
+  padding:54px 38px;
+  box-shadow:var(--shadow);
+}
+.thank-you-icon{
+  width:68px;
+  height:68px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  margin:0 auto 22px;
+  background:var(--purple-100);
+  color:var(--purple-900);
+  font-size:30px;
+  font-weight:900;
+}
+.thank-you-card h2{
+  font-family:Georgia,serif;
+  color:var(--purple-900);
+  font-size:38px;
+  line-height:1.05;
+  margin:0 0 14px;
+}
+.thank-you-card p{
+  color:var(--muted);
+  font-size:17px;
+  margin:0 auto 28px;
+  max-width:560px;
+}
+.thank-you-actions{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
