@@ -65,7 +65,7 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
 }
 
 .footer-brand-text span{
-  color:var(--gold-soft);
+  color:#fff;
   font-size:30px;
   font-weight:700;
 }
