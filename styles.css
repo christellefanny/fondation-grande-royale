@@ -677,3 +677,98 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
     margin-bottom:20px;
   }
 }
+
+
+/* Skills & Future 2026 featured initiative */
+.skills-future-feature{padding:18px 0 58px}
+.skills-feature-card{
+  border:1px solid var(--border);
+  border-radius:24px;
+  background:linear-gradient(180deg,#fff 0%,#fbf8fd 100%);
+  padding:34px;
+  box-shadow:0 14px 34px rgba(49,19,66,.07);
+}
+.skills-feature-copy{max-width:980px}
+.skills-feature-copy .kicker{margin-bottom:10px}
+.skills-feature-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.skills-feature-tags span{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#f3edf8;
+  color:var(--purple-900);
+  font-size:12px;
+  font-weight:800;
+}
+.skills-feature-copy h2{
+  margin:0;
+  font-family:Georgia,serif;
+  font-size:clamp(36px,4vw,54px);
+  line-height:1.02;
+  color:var(--purple-900);
+}
+.skills-feature-lede{
+  margin:8px 0 18px;
+  font-size:20px;
+  font-weight:700;
+  color:var(--burg);
+}
+.skills-feature-copy>p{max-width:880px}
+.skills-stages{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:24px 0;
+}
+.skills-stages div{
+  padding:16px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#fff;
+}
+.skills-stages strong{
+  display:block;
+  color:var(--purple-900);
+  margin-bottom:5px;
+}
+.skills-stages span{
+  display:block;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.45;
+}
+.skills-event-gallery{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  margin-top:28px;
+}
+.skills-event-gallery figure{
+  margin:0;
+  overflow:hidden;
+  border-radius:18px;
+  background:#eee8f3;
+}
+.skills-event-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.gallery-note{
+  margin:10px 2px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+@media(max-width:860px){
+  .skills-stages{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .skills-future-feature{padding:10px 0 42px}
+  .skills-feature-card{padding:22px 18px;border-radius:18px}
+  .skills-feature-copy h2{font-size:34px}
+  .skills-feature-lede{font-size:18px}
+  .skills-stages{grid-template-columns:1fr}
+  .skills-event-gallery{gap:12px}
+  .skills-event-gallery figure{border-radius:14px}
+}
