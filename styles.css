@@ -490,3 +490,92 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
   }
   .program-detail-grid{grid-template-columns:1fr}
 }
+
+
+/* Compact programs dropdowns — simple FAQ style */
+.programs-accordion-section{
+  padding-top:36px;
+}
+.programs-accordion{
+  gap:0;
+  max-width:900px;
+}
+.program-accordion,
+.featured-program{
+  border:0;
+  border-bottom:1px solid #ddd6e3;
+  border-radius:0;
+  box-shadow:none;
+  background:transparent;
+}
+.program-accordion:first-child{
+  border-top:1px solid #ddd6e3;
+}
+.program-accordion[open]{
+  box-shadow:none;
+}
+.program-accordion summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:17px 4px;
+  min-height:56px;
+}
+.program-order,
+.program-status{
+  display:none;
+}
+.program-title{
+  font-family:inherit;
+  font-size:17px;
+  font-weight:500;
+  color:#3f3945;
+}
+.program-accordion summary::after{
+  content:"⌄";
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  border-radius:50%;
+  background:#f3f1f5;
+  color:#69616f;
+  font-size:20px;
+  font-weight:700;
+  margin:0;
+  transform:none;
+}
+.program-accordion[open] summary::after{
+  content:"⌃";
+}
+.featured-program .program-title{
+  color:var(--purple-900);
+  font-weight:700;
+}
+.program-panel{
+  padding:0 44px 20px 4px;
+}
+.program-panel>p{
+  font-size:15px;
+  line-height:1.6;
+}
+.program-detail-grid{
+  margin-top:14px;
+  gap:10px 22px;
+}
+.program-detail-grid div{
+  padding-top:10px;
+}
+@media(max-width:620px){
+  .programs-accordion-section{padding-top:26px}
+  .program-accordion summary{
+    display:flex;
+    padding:15px 2px;
+    min-height:52px;
+  }
+  .program-title{font-size:16px}
+  .program-panel{padding:0 38px 18px 2px}
+  .program-detail-grid{grid-template-columns:1fr}
+}
