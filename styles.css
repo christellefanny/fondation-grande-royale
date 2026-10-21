@@ -197,7 +197,7 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
 
 
 /* Homepage current-focus redesign */
-.home-focus{padding:72px 0 88px}
+.home-focus{padding:72px 0 34px}
 .promise-band{
   background:linear-gradient(135deg,var(--purple-900),var(--purple-800));
   color:#fff;
@@ -359,4 +359,22 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
   .focus-actions .primary-btn,.focus-actions .outline-btn{width:100%}
   .education-materials{min-height:240px}
   .secondary-focus-grid{grid-template-columns:1fr}
+}
+
+
+/* Homepage section spacing */
+.home-focus + .section{
+  padding:28px 0;
+}
+.home-focus + .section + .cta{
+  padding:28px 0 64px;
+}
+@media(max-width:620px){
+  .home-focus{padding:52px 0 28px}
+  .home-focus + .section{
+    padding:22px 0;
+  }
+  .home-focus + .section + .cta{
+    padding:22px 0 54px;
+  }
 }
