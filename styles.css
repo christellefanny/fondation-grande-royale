@@ -772,3 +772,66 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
   .skills-event-gallery{gap:12px}
   .skills-event-gallery figure{border-radius:14px}
 }
+
+
+/* Skills & Future 2026 photo gallery */
+.skills-gallery-heading{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:20px;
+  margin:34px 0 18px;
+  padding-top:28px;
+  border-top:1px solid var(--border);
+}
+.skills-gallery-heading .kicker{margin-bottom:6px}
+.skills-gallery-heading h3{
+  margin:0;
+  font-family:Georgia,serif;
+  font-size:clamp(28px,3vw,40px);
+  line-height:1.08;
+  color:var(--purple-900);
+}
+.skills-gallery-heading>span{
+  flex:0 0 auto;
+  font-size:13px;
+  font-weight:800;
+  color:var(--muted);
+}
+.skills-event-gallery{
+  display:block;
+  columns:3 280px;
+  column-gap:16px;
+  margin-top:0;
+}
+.skills-event-gallery figure{
+  display:inline-block;
+  width:100%;
+  margin:0 0 16px;
+  break-inside:avoid;
+  overflow:hidden;
+  border-radius:16px;
+  background:#f3eef7;
+  box-shadow:0 8px 20px rgba(49,19,66,.07);
+}
+.skills-event-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+@media(max-width:860px){
+  .skills-event-gallery{columns:2 240px}
+}
+@media(max-width:620px){
+  .skills-gallery-heading{
+    align-items:flex-start;
+    margin-top:28px;
+    padding-top:22px;
+  }
+  .skills-gallery-heading h3{font-size:28px}
+  .skills-event-gallery{columns:1}
+  .skills-event-gallery figure{
+    margin-bottom:12px;
+    border-radius:14px;
+  }
+}
