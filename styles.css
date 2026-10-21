@@ -579,3 +579,20 @@ a{text-decoration:none;color:inherit}img{display:block;max-width:100%}button,inp
   .program-panel{padding:0 38px 18px 2px}
   .program-detail-grid{grid-template-columns:1fr}
 }
+
+
+.programs-current-title{
+  margin-bottom:24px;
+}
+.long-term-programs{
+  padding-top:64px;
+}
+.long-term-accordion{
+  max-width:900px;
+}
+.long-term-accordion .program-title{
+  font-weight:500;
+}
+@media(max-width:620px){
+  .long-term-programs{padding-top:48px}
+}
