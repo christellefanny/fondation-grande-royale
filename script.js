@@ -100,6 +100,33 @@
     updateMenuA11y();
   }));
 
+
+  // Skills & Future 2026 modal
+  const skillsModal = document.getElementById('skills-future-modal');
+  const openSkillsBtn = document.querySelector('[data-open-skills-modal]');
+  const closeSkillsBtn = document.querySelector('[data-close-skills-modal]');
+  const openSkillsModal = () => {
+    if (!skillsModal) return;
+    if (typeof skillsModal.showModal === 'function') skillsModal.showModal();
+    else skillsModal.setAttribute('open','');
+    document.body.classList.add('modal-open');
+  };
+  const closeSkillsModal = () => {
+    if (!skillsModal) return;
+    if (typeof skillsModal.close === 'function') skillsModal.close();
+    else skillsModal.removeAttribute('open');
+    document.body.classList.remove('modal-open');
+    openSkillsBtn?.focus();
+  };
+  openSkillsBtn?.addEventListener('click', openSkillsModal);
+  closeSkillsBtn?.addEventListener('click', closeSkillsModal);
+  skillsModal?.addEventListener('click', (event) => {
+    if (event.target === skillsModal) closeSkillsModal();
+  });
+  skillsModal?.addEventListener('close', () => {
+    document.body.classList.remove('modal-open');
+  });
+
   const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
   applyLanguage(lang);
 })();
